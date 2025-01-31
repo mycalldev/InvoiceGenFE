@@ -75,6 +75,7 @@ export default function InvoiceGenerator() {
   };
 
   return (
+    <div className={styles.body}>
     <div className={styles.container}>
       <Image src="/logo.png" alt="Company Logo" width={150} height={150} className={styles.logo} />
       <h2 className={styles.title}>Mycall Dev Tech</h2>
@@ -134,6 +135,7 @@ export default function InvoiceGenerator() {
       <h3 className={styles.total}>Total Invoice Price: £{totalInvoicePrice.toFixed(2)}</h3>
       <button onClick={addItem} className={styles.addButton}>+ Add Item</button>
       <button onClick={generatePDF} className={styles.downloadButton}>Download PDF</button>
+    </div>
     </div>
   );
 }
